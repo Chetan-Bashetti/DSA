@@ -14,12 +14,12 @@ function getLargestSubString(str: string) {
 			end++;
 			maxLength = Math.max(maxLength, uniqueCharSet.size);
 		} else {
-			uniqueCharSet.delete(str[end]);
+			uniqueCharSet.delete(str[start]);
 			start++;
 		}
 	}
 	return maxLength;
 }
 
-const subStringResult = getLargestSubString('abcabcbb');
+const subStringResult = getLargestSubString('pwwkew');
 console.log(subStringResult, 'maxLength');
